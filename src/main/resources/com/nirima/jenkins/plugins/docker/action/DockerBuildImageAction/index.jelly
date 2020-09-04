@@ -1,0 +1,20 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core" xmlns:l="/lib/layout">
+    <l:layout title="Docker">
+        <l:main-panel>
+            <h1>Docker Image Build / Publish</h1>
+
+
+            <b>Host:</b>
+            ${it.containerHost}
+            <br/>
+
+            <b>Original Container Id:</b>
+            ${it.containerId}
+            <br/>
+            <b>Committed Container Id(s):</b>
+            ${it.tags}
+            <br/>
+        </l:main-panel>
+    </l:layout>
+</j:jelly>
